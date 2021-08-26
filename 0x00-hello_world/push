@@ -1,4 +1,4 @@
-chmod u+x $1
+#!/bin/bash
 git add --all
 git commit -m 'Added a new file'
 git push
