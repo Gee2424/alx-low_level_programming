@@ -4,7 +4,7 @@
 
 /**
  *main - assingns a new value to n everytime program is executed
- *return : 0 if execution is success
+ *Return: 0 if execution is success
  */
 int main(void)
 {
