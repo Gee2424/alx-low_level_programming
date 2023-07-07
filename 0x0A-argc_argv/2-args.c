@@ -6,10 +6,10 @@
 *Return: Always 0 (Success)
 */
 int main(int argc, char *argv[]) {
-		(void)argv;
-        argc = argc-1;
-        printf("%d\n", argc);
-
+		int i;
+        for (i=0; i<argc; i++){
+        printf("%s\n", argv[i]);
+		}
     return 0;
 }
 
