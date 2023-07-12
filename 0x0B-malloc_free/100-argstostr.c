@@ -25,7 +25,7 @@ size++;
 size++;
 
 /**
-*allocate memory for total number of chars and
+*malloc - allocate memory for total number of chars and
 * new line for each argument
 */
 strDup = malloc(sizeof(char) * size);
