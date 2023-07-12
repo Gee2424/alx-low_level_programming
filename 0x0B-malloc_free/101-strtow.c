@@ -16,7 +16,8 @@ if (str == NULL || str[0] == '\0')
 return (NULL);
 
 for (w_count = i = 0; str[i]; i++)
-if ((str[i] != ' ' && str[i + 1] == ' ') || (str[i] != ' ' && str[i + 1] == '\0'))
+if ((str[i] != ' ' && str[i + 1] == ' ') 
+|| (str[i] != ' ' && str[i + 1] == '\0'))
 w_count++;
 
 words = malloc((w_count + 1) * sizeof(char *));
@@ -25,8 +26,8 @@ return (NULL);
 
 for (i = j = 0; i < w_count; i++)
 {
-while (str[j] == ' ')
-j++;
+while (str[j] == ' ') j++
+;
 for (c_count = 0; str[j + c_count] != ' ' && str[j + c_count]; c_count++);
 words[i] = malloc((c_count + 1) * sizeof(char));
 if (words[i] == NULL)
