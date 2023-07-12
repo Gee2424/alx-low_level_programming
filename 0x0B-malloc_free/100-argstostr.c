@@ -19,12 +19,15 @@ return (NULL);
 /* count the number of chars in each string */
 for (i = 0, size = 0; i < ac; i++)
 {
-for (j = 0; av[i][j] != '\0'; j++, size++);
+for (j = 0; 
+av[i][j] != '\0'; 
+j++, size++);
 size++;
 }
 size++;
 
-/* allocate memory for total number of chars and
+/**
+*allocate memory for total number of chars and
 * new line for each argument
 */
 strDup = malloc(sizeof(char) * size);
