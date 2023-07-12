@@ -26,10 +26,11 @@ return (NULL);
 
 for (i = j = 0; i < w_count; i++)
 {
-while (str[j] == ' ') 
+while (str[j] == ' ')
 j++
 ;
-for (c_count = 0; str[j + c_count] != ' ' && str[j + c_count]; c_count++);
+for (c_count = 0; str[j + c_count] != ' ' && str[j + c_count]; c_count++)
+;
 words[i] = malloc((c_count + 1) * sizeof(char));
 if (words[i] == NULL)
 {
