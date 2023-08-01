@@ -1,2 +1,2 @@
-Here the files in this rerectory will be explained
+Here the files in this Directory will be explained
 
